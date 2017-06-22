@@ -1,10 +1,12 @@
 def factorial(n)
-	if n <= 1
+	if n == 0
 		1
-	else
+	elsif n > 0
 		puts n.to_s + "*" 
 		n * factorial(n-1)
+	else
+		puts "undefined"
 	end
 end
 
-puts factorial(6) 
+puts factorial(5)
